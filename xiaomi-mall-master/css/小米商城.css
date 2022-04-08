@@ -1,0 +1,478 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 这个可以拿出来当通用容器格式 */
+
+.container {
+    /* height: 100%; */
+    overflow: hidden;
+    width: 1226px;
+    margin: 0 auto;
+}
+
+
+/* 网站最顶部栏 的内容在这里 */
+
+.set-topbar {
+    /* 最外层容器 */
+    height: 40px;
+    width: device-width;
+    background-color: #333;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.topbar-a {
+    float: left;
+    padding: 5px;
+    line-height: 40px;
+    color: #b0b0b0;
+    padding: 0px;
+}
+
+.topbar-a:hover {
+    color: white;
+}
+
+.topbar-nav {
+    float: left
+}
+
+.set-topbar .container .topbar-nav a {
+    float: left;
+}
+
+.siteUserInfo {
+    float: right;
+    margin-right: 25px;
+    /* position: relative; */
+}
+
+.sep {
+    float: left;
+    color: #424242;
+    margin: 0px;
+    line-height: 40px;
+    margin: 0 3.6px;
+}
+
+.topbar-a:hover {
+    color: white;
+}
+
+.topbar-shoppingcart {
+    width: 120px;
+    height: 40px;
+    display: block;
+    float: right;
+    padding: 0;
+    text-align: center;
+    background-color: #424242;
+}
+
+.topbar-shoppingcart:hover {
+    background-color: #fff;
+    color: #ff6700;
+}
+
+.shopping-cart-detail {
+    display: none;
+    position: absolute;
+    top: 40px;
+    /* right: 146px; */
+    width: 200px;
+    height: 100px;
+    background: pink;
+}
+
+
+/* 网站头部 */
+
+.site-header {
+    margin-top: 0px;
+    height: 100px;
+    background-color: white;
+    /* overflow: hidden; */
+}
+
+.site-header .container {
+    overflow: hidden;
+}
+
+
+/* .header-logo {
+    height: 100px;
+    width: 56px;
+    background-color: pink;
+} */
+
+.site-header .container .logo {
+    display: block;
+    float: left;
+    height: 62px;
+    width: 56px;
+    padding: 0px;
+    margin: 19px 0px;
+    background-image: url(../miui/logo-mi2.png);
+    /* 设置背景图片大小 */
+    background-size: 56px;
+    background-repeat: no-repeat;
+}
+
+.site-header .container .nav-list {
+    float: left;
+    /* width: 1100px; */
+    width: 820px;
+    height: 88px;
+    padding-left: 30px;
+    padding-top: 12px;
+    font-size: 16px;
+}
+
+.site-header .container .nav-list a {
+    color: black;
+}
+
+.site-header .container .nav-list a:hover {
+    color: #ff7f00;
+}
+
+.nav-list .nav-category {
+    float: left;
+    padding: 26px 10px 38px 10px;
+}
+
+.nav-space {
+    width: 127px;
+    height: 88px;
+    padding-right: 15px;
+}
+
+.site-header .container .search-area {
+    float: right;
+    height: 100px;
+    width: 300px;
+    /* background-color: pink; */
+}
+
+.search-content {
+    float: right;
+    width: 220px;
+    /* height: 48px; */
+    margin: 25px 0px;
+    border: 1px solid #e0e0e0;
+    line-height: 48px;
+}
+
+.search-button {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+}
+
+.search-button:hover,
+.search-content:hover {
+    border-color: #ff7f00;
+}
+
+.search-button:hover {
+    color: white;
+    background-color: #ff7f00;
+}
+
+.search-content:focus {
+    border-color: #ff7f00;
+}
+
+.site-header .container .shoppingcart-detail {
+    display: none;
+    position: absolute;
+    right: 146px;
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    z-index: 1010;
+}
+
+
+/* 
+============================
+滚动播放栏部分
+============================
+ */
+
+.home-page {
+    width: device-width;
+    overflow: hidden;
+}
+
+.container .site-category-list {
+    position: absolute;
+    /* float: left; */
+    /* background-color: #a09a97; */
+    background-color: rgba(105, 101, 101, .6);
+}
+
+
+/* .slide {
+    float: left;
+    z-index: 1000;
+} */
+
+
+/* .site-show {
+    background-size: 1226px;
+    background-image: url(../miui/bg1.jpg);
+    background-repeat: no-repeat;
+} */
+
+.site-category-list {
+    z-index: 1004;
+}
+
+.container .site-category-list li {
+    width: 204px;
+    height: 46px;
+    padding-left: 30px;
+    line-height: 42px;
+}
+
+.container .site-category-list li:hover {
+    background-color: #ff6700;
+}
+
+.container .site-category-list li a {
+    color: #f6f5f5;
+}
+
+
+/* 
+============================
+推荐栏部分
+============================
+ */
+
+
+/* 推荐栏左侧部分 */
+
+.home-area {
+    margin-top: 20px;
+    height: 190px;
+}
+
+.container .home-channel-list {
+    float: left;
+    width: 228px;
+    height: 170px;
+    /* padding: 3px; */
+}
+
+.container .home-channel-list li {
+    float: left;
+    width: 76px;
+    height: 75px;
+    padding-top: 10px;
+    background-color: #5f5750;
+}
+
+.container .home-channel-list li a {
+    text-align: center;
+    font-size: 12px;
+    color: #cccac7;
+}
+
+.container .home-channel-list li a img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+/* 推荐栏右侧部分 */
+
+.container .homePromoList li {
+    float: left;
+    width: 316px;
+    height: 170px;
+    /* background-color: orange; */
+    margin-left: 16px;
+    /* box-shadow: 0px 17px 16px -7px rgba(0, 0, 0, 0.4); */
+}
+
+.container .homePromoList li:hover {
+    box-shadow: 0px 17px 16px -7px rgba(0, 0, 0, 0.4);
+}
+
+
+/* 
+====================================
+下部商品页面部分， 页面背景变色为分界线
+====================================
+ */
+
+
+/* banner栏位 */
+
+.main-page {
+    background-color: #f5f5f5;
+    width: device-width;
+    overflow: hidden;
+}
+
+.main-banner-box {
+    float: left;
+    margin: 20px 0px;
+}
+
+.main-page .container .title {
+    float: left;
+    line-height: 58px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.main-page .container .see-more {
+    float: right;
+    line-height: 58px;
+    color: #333;
+}
+
+.main-page .container .see-more:hover {
+    color: #ff6700;
+    font-size: 14px;
+}
+
+
+/* 商品栏位 */
+
+.container .left {
+    float: left;
+    width: 234px;
+    height: 614px;
+    /* background-color: orange; */
+}
+
+.container .right {
+    float: right;
+    width: 992px;
+    height: 630px;
+    /* background-color: red; */
+}
+
+.container .right .right-item-up {
+    margin-bottom: 14px;
+}
+
+
+/* 左下边距为14px */
+
+.right-item,
+.right-item-up {
+    float: left;
+    width: 238px;
+    height: 260px;
+    background-color: white;
+    margin-left: 10px;
+    padding: 20px 0;
+}
+
+.right-item:hover,
+.right-item-up:hover {
+    box-shadow: 0px 17px 16px -7px rgba(0, 0, 0, 0.4);
+}
+
+.sell-item {
+    display: block;
+}
+
+.sell-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.item-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.desc {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.num {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #ff6700;
+}
+
+.dazhe-price {
+    color: #b0b0b0;
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+
+/* 
+====================================
+底边栏
+====================================
+ */
+
+.footer .footer-service {
+    height: 80px;
+    /* background-color: orange; */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer .footer-service li {
+    float: left;
+    width: 244px;
+    height: 25px;
+    /* background-color: pink; */
+    text-align: center;
+    padding: 27.5px 0px;
+    font-size: 16px;
+}
+
+.footer .footer-service li a {
+    display: block;
+    color: #616161;
+    border-right: 1px solid #e0e0e0;
+}
+
+.footer .footer-service li .last {
+    border: none;
+}
+
+.footer .footer-service li a:hover {
+    color: #ff6700;
+}
